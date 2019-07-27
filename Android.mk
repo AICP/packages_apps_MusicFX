@@ -16,7 +16,10 @@ LOCAL_AAPT_FLAGS := \
         --auto-add-overlay
 
 LOCAL_MODULE_TAGS := optional
-LOCAL_OVERRIDES_PACKAGES := DSPManager
+LOCAL_OVERRIDES_PACKAGES := \
+	JamesDSPManager \
+	libjamesDSPImpulseToolbox
+
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
 LOCAL_MIN_SDK_VERSION := 24
 LOCAL_PACKAGE_NAME := MusicFX
